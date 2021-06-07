@@ -1,6 +1,6 @@
 //api.openweathermap.org/data/2.5/weather?q={city name}&appid=90097385080ce7e78b756f4b298ae50d
-//http://maps.openweathermap.org/maps/2.0/weather/{op}/{z}/{x}/{y}&appid={API key}
-//http://api.openweathermap.org/geo/1.0/reverse?lat=51.5098&lon=-0.1180&limit=5&appid=90097385080ce7e78b756f4b298ae50d
+//https://maps.openweathermap.org/maps/2.0/weather/{op}/{z}/{x}/{y}&appid={API key}
+//https://api.openweathermap.org/geo/1.0/reverse?lat=51.5098&lon=-0.1180&limit=5&appid=90097385080ce7e78b756f4b298ae50d
 $(document).ready(function() {
     $('#city').keypress(function(e) {
         if(e.keyCode==13)
