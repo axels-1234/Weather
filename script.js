@@ -90,9 +90,13 @@ function showPosition(position) {
         if(xhr.readyState === 4) {
             console.log(position);
             console.log(JSON.parse(xhr.responseText));
-            let places = JSON.parse(xhr.responseText);
-            for(var i = 0; i < 5; i++) {
-                getLocalWeather(places[i].name);
+            let places = JSON.parse(xhr.responseText);if(window.screen.width > 700) {
+                for(var i = 0; i < 5; i++) {
+                    getLocalWeather(places[i].name);
+                }
+            }
+            else {
+                getLocalWeather(places[0].name);
             }
         }
     }
