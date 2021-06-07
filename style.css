@@ -48,7 +48,7 @@ button:focus {
 }
 @media screen and (max-width: 700px) {
     body {
-        overflov-y: visible;
+        overflov: visible;
     }
     .area {
         width: 100%;
