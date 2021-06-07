@@ -10,7 +10,7 @@ $(document).ready(function() {
 function GetWeater() {
     console.log("https://api.openweathermap.org/data/2.5/weather?q=" + document.getElementById("city").value + "&appid=90097385080ce7e78b756f4b298ae50d");
     let xhr = new XMLHttpRequest();
-    xhr.open("get", "http://api.openweathermap.org/data/2.5/weather?q=" + document.getElementById("city").value + "&appid=90097385080ce7e78b756f4b298ae50d");
+    xhr.open("get", "https://api.openweathermap.org/data/2.5/weather?q=" + document.getElementById("city").value + "&appid=90097385080ce7e78b756f4b298ae50d");
     xhr.send();
     xhr.onreadystatechange = function() {
         if(xhr.readyState === 4) {
