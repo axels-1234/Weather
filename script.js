@@ -8,7 +8,7 @@ $(document).ready(function() {
     });
 });
 function GetWeater() {
-    console.log("http://api.openweathermap.org/data/2.5/weather?q=" + document.getElementById("city").value + "&appid=90097385080ce7e78b756f4b298ae50d");
+    console.log("https://api.openweathermap.org/data/2.5/weather?q=" + document.getElementById("city").value + "&appid=90097385080ce7e78b756f4b298ae50d");
     let xhr = new XMLHttpRequest();
     xhr.open("get", "http://api.openweathermap.org/data/2.5/weather?q=" + document.getElementById("city").value + "&appid=90097385080ce7e78b756f4b298ae50d");
     xhr.send();
@@ -84,7 +84,7 @@ function getLocation() {
 function showPosition(position) {
     document.getElementById("weather").innerHTML = "";
     let xhr = new XMLHttpRequest();
-    xhr.open("get", "http://api.openweathermap.org/geo/1.0/reverse?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&limit=5&appid=90097385080ce7e78b756f4b298ae50d");
+    xhr.open("get", "https://api.openweathermap.org/geo/1.0/reverse?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&limit=5&appid=90097385080ce7e78b756f4b298ae50d");
     xhr.send();
     xhr.onreadystatechange = function() {
         if(xhr.readyState === 4) {
@@ -99,7 +99,7 @@ function showPosition(position) {
 }
 function getLocalWeather(place) {
     let xhr = new XMLHttpRequest();
-    xhr.open("get", "http://api.openweathermap.org/data/2.5/weather?q=" + place + "&appid=90097385080ce7e78b756f4b298ae50d");
+    xhr.open("get", "https://api.openweathermap.org/data/2.5/weather?q=" + place + "&appid=90097385080ce7e78b756f4b298ae50d");
     xhr.send();
     xhr.onreadystatechange = function() {
         if(xhr.readyState === 4) {
