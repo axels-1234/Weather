@@ -47,9 +47,6 @@ button:focus {
     font-style: italic; 
 }
 @media screen and (max-width: 700px) {
-    body {
-        overflov: visible;
-    }
     .area {
         width: 100%;
     }
