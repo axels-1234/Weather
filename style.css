@@ -46,3 +46,8 @@ button:focus {
 :-ms-input-placeholder {  
     font-style: italic; 
 }
+@media screen and (max-width: 700px) {
+    .area {
+        width: 100%;
+    }
+}
