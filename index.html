@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src=jQuery.js></script>
+    <script src="script.js"></script>
+    <link rel="icon" href="images/icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axels Väder</title>
+</head>
+<body onload="getLocation();">
+    <div class="main" id="main">
+        <h1>Axels Väderapp</h1>
+        <input type="text" id="city" placeholder="Sök">
+        <button onclick="GetWeater()">Kolla Vädret</button>
+        <button onclick="getLocation()">Lokalt Väder</button>
+        <div id="weather"></div>
+    </div>
+</body>
+</html>
